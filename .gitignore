@@ -1,4 +1,14 @@
-datasets/**
-!datasets/README.md
-venv/
+# temporários
+temp_predict/
+temp_uploads/
 runs/
+
+# pesos do YOLO (baixados automaticamente)
+*.pt
+
+# ambiente
+venv/
+
+# datasets locais
+datasets/**
+!datasets/**/README.md
