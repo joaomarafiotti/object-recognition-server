@@ -1,13 +1,17 @@
-# temporários
+# temporários e saídas locais
 temp_predict/
 temp_uploads/
 runs/
 
-# pesos do YOLO (baixados automaticamente)
+# pesos e modelos locais
 *.pt
 
-# ambiente
+# ambiente virtual
 venv/
+
+# cache Python
+__pycache__/
+*.pyc
 
 # datasets locais
 datasets/**
