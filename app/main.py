@@ -1,4 +1,5 @@
 import os
+import time
 import uuid
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
@@ -15,7 +16,6 @@ def health():
 
 @app.post("/detect")
 async def detect(file: UploadFile = File(...)):
-    # salva arquivo temporário
     ext = os.path.splitext(file.filename)[1].lower()
     if ext not in [".jpg", ".jpeg", ".png"]:
         return JSONResponse(status_code=400, content={"error": "Formato inválido. Use jpg/jpeg/png."})
@@ -27,13 +27,10 @@ async def detect(file: UploadFile = File(...)):
     with open(temp_path, "wb") as f:
         f.write(data)
 
-    # roda detecção
-    import time
     t0 = time.time()
     detections = detect_objects(temp_path, conf=0.25)
     dt_ms = (time.time() - t0) * 1000
-    
-    # (opcional) apagar arquivo temporário
+
     try:
         os.remove(temp_path)
     except Exception:
