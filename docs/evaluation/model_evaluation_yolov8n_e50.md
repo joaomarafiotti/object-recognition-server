@@ -1,4 +1,4 @@
-# Avaliação do modelo YOLOv8n fine-tuned — Objects in the Classroom
+# Avaliação do modelo YOLOv8n fine-tuned - Objects in the Classroom
 
 ## Objetivo
 
