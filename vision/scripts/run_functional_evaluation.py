@@ -28,7 +28,7 @@ EVALUATION_CASES = [
     {"expected": "fan", "pattern": "fan_193.*"},
     {"expected": "laptop", "pattern": "laptop_194.*"},
     {"expected": "remote-control", "pattern": "remote-control_193.*"},
-    {"expected": "bag", "pattern": "bag_12-c608116e-ae57-403c-b447-88afd14b2_jpg*"},
+    {"expected": "bag", "pattern": "bag_12-c608116e-*"},
     {"expected": "pants", "pattern": "pants_image178_jpg*"},
     {"expected": "shoes", "pattern": "shoes_193.*"},
     {"expected": "hat", "pattern": "hat_image--209-*"},

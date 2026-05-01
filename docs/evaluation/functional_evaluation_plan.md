@@ -87,7 +87,7 @@ A avaliação funcional usa uma imagem de teste para cada uma das 20 classes do 
 | fan | `fan_193.*` |
 | laptop | `laptop_194.*` |
 | remote-control | `remote-control_193.*` |
-| bag | `bag_12-c608116e-ae57-403c-b447-88afd14b2_jpg*` |
+| bag | `bag_12-c608116e-*` |
 | pants | `pants_image178_jpg*` |
 | shoes | `shoes_193.*` |
 | hat | `hat_image--209-*` |
