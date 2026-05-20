@@ -227,11 +227,12 @@ datasets/README.md
 
 ## Próximos passos
 
-* documentar a avaliação experimental em `docs/evaluation/`
-* criar tabela funcional com testes em imagens selecionadas
-* gerar diagramas de arquitetura e fluxo
-* atualizar artigo/monografia com metodologia, implementação e resultados
-* avaliar limitações e possibilidades futuras, como execução on-device ou testes em dispositivo físico
+* comparar o modelo YOLOv8n atual com modelos leves mais recentes, como YOLO26n
+* avaliar métricas, tamanho do modelo, tempo de inferência e viabilidade de exportação para mobile
+* exportar o modelo selecionado para formato mobile, como TFLite/LiteRT
+* iniciar integração on-device no aplicativo Android
+* comparar a arquitetura cliente-servidor atual com a futura arquitetura on-device
+* gerar diagramas finais de arquitetura, fluxo de execução e pipeline de treinamento/inferência
 
 ## Autor
 
